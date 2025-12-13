@@ -9,7 +9,7 @@ public class CardSO : ScriptableObject
     public CardType CardType;
     public CardTarget CardTarget;
     // What this Card does
-    public CardBehavior CardBehavior;
+    public Behavior[] CardBehavior;
 }
 public enum CardType{
     Attack,
@@ -21,10 +21,4 @@ public enum CardTarget{
     AllEnemy,
     AllTeamMate,
     Specific,    
-}
-public enum CardBehavior
-{
-    Attack,
-    GiveBuff,
-
 }

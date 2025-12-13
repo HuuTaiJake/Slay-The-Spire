@@ -9,15 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46065aaf765c7d24c926f546502c7ba8, type: 3}
-  m_Name: Silent
+  m_Script: {fileID: 11500000, guid: db09c374f09153041bdd93e9b22a5b8c, type: 3}
+  m_Name: BaseAttackCard
   m_EditorClassIdentifier: 
-  HP: 0
-  Block: 0
-  Energy: 0
-  MaxEnergy: 0
-  Strength: 0
-  Dexterity: 0
-  DamagePercent: 0
-  BlockPercent: 0
-  MaxHPBase: 70
+  CardName: BaseAttack
+  CardDescription: Deal 5 dame to target
+  EnergyCost: 1
+  CardType: 0
+  CardTarget: 3
+  CardBehavior:
+  - {fileID: 0}
+  - {fileID: 0}
