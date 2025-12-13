@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-
+[Serializable]
 public class AttackBehavior : Behavior
 {
     private enum AttackType

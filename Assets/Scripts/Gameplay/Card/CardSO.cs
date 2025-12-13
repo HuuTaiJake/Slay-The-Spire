@@ -9,7 +9,7 @@ public class CardSO : ScriptableObject
     public CardType CardType;
     public CardTarget CardTarget;
     // What this Card does
-    public Behavior[] CardBehavior;
+    [SerializeReference] public Behavior[] CardBehavior;
 }
 public enum CardType{
     Attack,
