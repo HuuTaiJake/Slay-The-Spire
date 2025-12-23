@@ -34,6 +34,7 @@ public class CombatUnit : BaseUnit
     }
 
     public void Heal(int amount)
+    {
         Attribute.HP += amount;
         if (Attribute.HP > Attribute.MaxHP)
         {
