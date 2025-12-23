@@ -33,4 +33,13 @@ public class CombatUnit : BaseUnit
         effects.Add(effect);
     }
 
+    public void Heal(int amount)
+        Attribute.HP += amount;
+        if (Attribute.HP > Attribute.MaxHP)
+        {
+            Attribute.HP = Attribute.MaxHP;
+        }
+        Debug.Log($"{name} healed for {amount}. Current HP: {Attribute.HP}/{Attribute.MaxHP}");
+    }
+
 }
