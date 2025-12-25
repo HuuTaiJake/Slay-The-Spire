@@ -4,17 +4,17 @@ using System.Collections.Generic;
 public abstract class GameEvent { }
 
 // --- Combat Events ---
-public class CombatStartEvent : GameEvent 
+public class CombatStartEvent : GameEvent
 {
     // Potentially add info about enemies, etc.
 }
 
-public class CombatEndEvent : GameEvent 
+public class CombatEndEvent : GameEvent
 {
     public bool PlayerWon;
 }
 
-public class TurnStartEvent : GameEvent 
+public class TurnStartEvent : GameEvent
 {
     public int TurnNumber;
 }
@@ -52,7 +52,7 @@ public class CardPlayedEvent : GameEvent
     public string Description; // e.g. "Attack", "Skill"
 }
 
-public class CardDrawEvent : GameEvent 
+public class CardDrawEvent : GameEvent
 {
     public int Amount;
 }

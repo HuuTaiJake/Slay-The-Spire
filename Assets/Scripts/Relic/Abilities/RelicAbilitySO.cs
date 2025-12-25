@@ -5,10 +5,10 @@ using UnityEngine;
 public class RelicAbilitySO : ScriptableObject
 {
     public GameTriggerType Trigger;
-    
+
     [Tooltip("All conditions must be met for the effects to run.")]
     public List<RelicConditionSO> Conditions = new List<RelicConditionSO>();
-    
+
     public List<RelicEffectSO> Effects = new List<RelicEffectSO>();
 
     public void Execute(GameEvent gameEvent, RelicInstance instance)

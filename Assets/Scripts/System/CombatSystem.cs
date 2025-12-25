@@ -54,7 +54,7 @@ public class CombatSystem : SystemBase
         CombatEventDic[CombatEvent.StartCombat]?.Invoke();
 
         // Fire Global Event
-        global::GlobalEventManager.Instance?.Invoke(new CombatStartEvent());
+        GlobalEventManager.Instance?.Invoke(new CombatStartEvent());
 
         CurrentTurn = 0;
         StartPlayerTurn();
@@ -65,7 +65,7 @@ public class CombatSystem : SystemBase
         CombatEventDic[CombatEvent.StartTurn]?.Invoke();
 
         // Fire Global Event
-        global::GlobalEventManager.Instance?.Invoke(new TurnStartEvent { TurnNumber = CurrentTurn + 1 });
+        GlobalEventManager.Instance?.Invoke(new TurnStartEvent { TurnNumber = CurrentTurn + 1 });
 
         // wait for player input or AI decision
 
@@ -76,7 +76,7 @@ public class CombatSystem : SystemBase
         CombatEventDic[CombatEvent.EndTurn]?.Invoke();
 
         // Fire Global Event
-        global::GlobalEventManager.Instance?.Invoke(new TurnEndEvent());
+        GlobalEventManager.Instance?.Invoke(new TurnEndEvent());
 
         CurrentTurn += 1;
     }
